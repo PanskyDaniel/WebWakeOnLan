@@ -1,0 +1,20 @@
+﻿@page
+@using WebWakeOnLan.Models
+@model MacAdress
+@{
+    ViewData["Title"] = "VIS";
+}
+<img src="~/css/logo_vis_.png" alt="VIS Logo" class="logo" />
+<div class="text-center">
+    <h1 class="display-4">VIS Wake On Lan</h1>
+</div>
+
+<div class="poletlacitko">
+    @using (Html.BeginForm("Probud", "Wake", FormMethod.Get))
+    {
+        @Html.TextBoxFor(model => model.Adresa, new { @placeholder = "Napište MAC Adresu Počítače" })
+        @Html.ValidationMessageFor(model => model.Adresa)
+
+        <button type="submit">Probudit PC</button>
+    }
+</div>

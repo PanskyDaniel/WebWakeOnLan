@@ -1,0 +1,62 @@
+.poletlacitko {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    max-width: 50%;
+    filter: drop-shadow(3px 3px 3px #000000);
+}
+.display-4{
+    font-family: Arial, Bahnschrift, 'Times New Roman', Times, serif;
+    color: black;
+    font-weight:550;
+}       
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+
+}
+
+#Adresa {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    border-radius: 50px;
+    text-align: center;
+    width: 541px;
+    font-size: 40px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 541px;
+    border-radius: 50px;
+    background-color: deepskyblue;
+    margin-top: 3px;
+    font-size: 40px;
+}
+
